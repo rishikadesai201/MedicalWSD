@@ -56,16 +56,18 @@ predict_tab, results_tab = st.tabs(["Disambiguate", "Results & Visualizations"])
 
 with predict_tab:
     st.subheader("Try a sentence")
+    abbreviation = st.text_input(
+        "Abbreviation",
+        max_chars=12,
+        help="Enter an abbreviation manually. Predictions are currently supported only for PE and PA.",
+    )
+    st.caption("The saved inference model currently supports PE and PA. AP and other terms are not supported for prediction.")
     with st.form("disambiguation_form"):
         sentence = st.text_area(
             "Clinical-style sentence",
             placeholder="Paste one sentence containing a single PE or PA target occurrence.",
             height=125,
         )
-        selection = st.selectbox("Abbreviation", ["PE", "PA", "AP", "Other / enter manually"])
-        abbreviation = selection
-        if selection == "Other / enter manually":
-            abbreviation = st.text_input("Enter abbreviation", max_chars=12)
         submitted = st.form_submit_button("Disambiguate", type="primary", use_container_width=True)
 
     if submitted:
