@@ -29,3 +29,6 @@ outputs/logs/*
 !outputs/baseline/*.jsonl
 !outputs/legacy_audit/*.json
 !outputs/legacy_audit/*.jsonl
+
+# Paper drafts (kept local, not committed)
+paper/
