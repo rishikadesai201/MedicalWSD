@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: medsense-ai
+Version: 0.1.0
+Summary: Research scaffold for medical abbreviation word-sense disambiguation
+Requires-Python: >=3.11
+Requires-Dist: numpy==2.4.6
+Requires-Dist: pandas==3.0.5
+Requires-Dist: scikit-learn==1.9.0
+Requires-Dist: PyYAML==6.0.3
+Provides-Extra: ui
+Requires-Dist: streamlit==1.40.2; extra == "ui"
+Requires-Dist: matplotlib==3.9.2; extra == "ui"
+Requires-Dist: seaborn==0.13.2; extra == "ui"
+Provides-Extra: neural
+Requires-Dist: torch==2.5.1; extra == "neural"
+Requires-Dist: transformers==4.46.3; extra == "neural"
+Requires-Dist: datasets==3.1.0; extra == "neural"
+Provides-Extra: dev
+Requires-Dist: pytest==8.3.3; extra == "dev"

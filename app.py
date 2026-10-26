@@ -1,4 +1,13 @@
 """Streamlit demo and reviewed-v1 evaluation dashboard."""
+from pathlib import Path
+import sys
+
+# Streamlit runs app.py from the repository root, which does not put this
+# src-layout package on sys.path unless the project was installed first.
+PROJECT_SRC = Path(__file__).resolve().parent / "src"
+if str(PROJECT_SRC) not in sys.path:
+    sys.path.insert(0, str(PROJECT_SRC))
+
 import streamlit as st
 
 from medsense.evaluation.visualization_data import (

@@ -1,0 +1,2 @@
+[console_scripts]
+medsense = medsense.cli:main
