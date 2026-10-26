@@ -1,0 +1,12 @@
+project:
+  name: MedSense AI
+  seed: 42
+data:
+  examples_path: data/processed/examples.jsonl
+  target_context_chars: 160
+models:
+  artifact_dir: models/artifacts
+  default: logistic_regression
+evaluation:
+  primary_metric: macro_f1
+  abstention_threshold: null

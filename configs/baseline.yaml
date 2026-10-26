@@ -1,0 +1,20 @@
+seed: 20261026
+dataset_path: data/synthetic/verified_examples.jsonl
+dataset_quality_report: data/synthetic/quality_report.json
+train_split: train
+validation_split: validation
+test_split: test
+use_validation_for_tuning: false
+feature_text: full_sentence_with_target_literal
+tfidf:
+  ngram_range: [1, 2]
+  min_df: 1
+  sublinear_tf: true
+logistic_regression:
+  C: 1.0
+  max_iter: 2000
+  class_weight: null
+linear_svm:
+  C: 1.0
+  class_weight: null
+output_dir: outputs/baseline

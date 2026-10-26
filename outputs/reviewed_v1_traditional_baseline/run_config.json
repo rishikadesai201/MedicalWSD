@@ -1,0 +1,57 @@
+{
+  "dataset_path": "data/synthetic/reviewed_v1.jsonl",
+  "dataset_sha256": "109c2927431f74c525163c307d8b61e9a66d528399467c8a77de4764b34adce9",
+  "seed": 20261026,
+  "tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 1,
+    "sublinear_tf": true
+  },
+  "logistic_regression": {
+    "C": 1.0,
+    "max_iter": 2000,
+    "class_weight": null
+  },
+  "linear_svm": {
+    "C": 1.0,
+    "class_weight": null
+  },
+  "class_counts_by_split": {
+    "train": {
+      "AP::Anterior pituitary": 11,
+      "PA::Physician assistant": 5,
+      "PA::Pulmonary artery": 3,
+      "PE::Physical examination": 6,
+      "PE::Pulmonary embolism": 9
+    },
+    "validation": {
+      "AP::Anterior pituitary": 3,
+      "PA::Physician assistant": 2,
+      "PA::Pulmonary artery": 2,
+      "PE::Pulmonary embolism": 2
+    },
+    "test": {
+      "AP::Anterior pituitary": 5,
+      "PA::Physician assistant": 2,
+      "PA::Pulmonary artery": 1,
+      "PE::Physical examination": 3,
+      "PE::Pulmonary embolism": 4
+    }
+  },
+  "eligible_abbreviations": [
+    "PA",
+    "PE"
+  ],
+  "excluded_abbreviations": {
+    "AP": "requires >=2 senses in train and test, test senses seen in train, and >=2 train examples per sense; train={'Anterior pituitary': 11}, test_senses=['Anterior pituitary']"
+  },
+  "minimum_train_examples_per_sense": 2,
+  "validation_policy": "reported only; no model selection or tuning",
+  "test_policy": "one evaluation on the existing held-out test split",
+  "n_evaluated_examples": 10,
+  "python_version": "3.14.5",
+  "scikit_learn_version": "1.9.0"
+}

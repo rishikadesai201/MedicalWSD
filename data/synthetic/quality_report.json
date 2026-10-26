@@ -1,0 +1,55 @@
+{
+  "n_examples": 132,
+  "invalid_examples": [],
+  "duplicate_id_count": 0,
+  "duplicate_text_count": 0,
+  "cross_split_duplicate_texts": 0,
+  "normalized_duplicate_count": 0,
+  "cross_split_normalized_duplicate_texts": 0,
+  "duplicate_rows_by_abbreviation": {},
+  "examples_by_abbreviation_and_sense": {
+    "AP::Anterior pituitary": 22,
+    "AP::Anteroposterior": 22,
+    "PA::Physician assistant": 22,
+    "PA::Pulmonary artery": 22,
+    "PE::Physical examination": 22,
+    "PE::Pulmonary embolism": 22
+  },
+  "examples_by_abbreviation": {
+    "AP": 44,
+    "PA": 44,
+    "PE": 44
+  },
+  "examples_by_split": {
+    "train": 72,
+    "validation": 24,
+    "test": 36
+  },
+  "examples_by_source_type": {
+    "synthetic": 132
+  },
+  "examples_by_difficulty": {
+    "clear": 48,
+    "moderate": 84
+  },
+  "examples_by_generation_method": {
+    "deterministic_template_v1": 132
+  },
+  "label_verification_status": {
+    "verified": 132
+  },
+  "dataset_label": "synthetic_educational_template_data",
+  "seed": 20261026,
+  "variants_per_template": 2,
+  "template_families": 66,
+  "template_families_by_split": {
+    "train": 36,
+    "validation": 12,
+    "test": 18
+  },
+  "group_split_leakage": false,
+  "invalid_target_span_count": 0,
+  "label_validation": "all gold senses resolve to terminology_verified entries; examples are synthetic and not patient data",
+  "insufficient_context_examples": 0,
+  "insufficient_context_policy": "excluded; no gold sense is assigned without context"
+}

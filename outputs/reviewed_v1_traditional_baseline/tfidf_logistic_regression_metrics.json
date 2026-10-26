@@ -1,0 +1,73 @@
+{
+  "n_test": 10,
+  "accuracy": 0.7,
+  "macro_f1": 0.525,
+  "per_sense": {
+    "PA::Physician assistant": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1": 0.8,
+      "support": 2
+    },
+    "PA::Pulmonary artery": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "PE::Physical examination": {
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1": 0.5,
+      "support": 3
+    },
+    "PE::Pulmonary embolism": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1": 0.8,
+      "support": 4
+    }
+  },
+  "confusion_matrix_labels": [
+    "PA::Physician assistant",
+    "PA::Pulmonary artery",
+    "PE::Physical examination",
+    "PE::Pulmonary embolism"
+  ],
+  "confusion_matrix": [
+    [
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      4
+    ]
+  ],
+  "model": "tfidf_logistic_regression",
+  "n_evaluated_examples": 10,
+  "evaluated_abbreviations": [
+    "PA",
+    "PE"
+  ],
+  "train_examples": 23,
+  "validation_examples_not_used_for_tuning": 6,
+  "seed": 20261026,
+  "confidence_kind": "uncalibrated predict_proba maximum"
+}

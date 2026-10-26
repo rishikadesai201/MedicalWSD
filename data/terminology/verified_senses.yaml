@@ -1,0 +1,52 @@
+schema_version: 1
+review_date: "2026-10-26"
+review_policy: >-
+  Candidate expansions were checked against the cited authoritative terminology
+  references. The references establish the abbreviation-sense mapping; synthetic
+  sentences are original educational examples and are not patient records.
+abbreviations:
+  PE:
+    senses:
+      - gold_sense: Pulmonary embolism
+        verification_status: terminology_verified
+        references:
+          - title: MedlinePlus — Pulmonary embolism
+            url: https://medlineplus.gov/pulmonaryembolism.html
+            supports: MedlinePlus identifies PE as the abbreviation for pulmonary embolism.
+          - title: MedlinePlus Medical Encyclopedia — Pulmonary embolus
+            url: https://medlineplus.gov/ency/article/000132.htm
+            supports: Alternative names include PE; describes a pulmonary embolus.
+      - gold_sense: Physical examination
+        verification_status: terminology_verified
+        references:
+          - title: NCI SEER Training — Common Abbreviations
+            url: https://training.seer.cancer.gov/abstracting/additional/abbreviations/all.html
+            supports: The abbreviation table explicitly maps PE to Physical examination.
+  PA:
+    senses:
+      - gold_sense: Pulmonary artery
+        verification_status: terminology_verified
+        references:
+          - title: NCI SEER Training — Common Abbreviations
+            url: https://training.seer.cancer.gov/abstracting/additional/abbreviations/all.html
+            supports: The abbreviation table explicitly maps PA to Pulmonary artery.
+      - gold_sense: Physician assistant
+        verification_status: terminology_verified
+        references:
+          - title: NCI SEER Training — Common Abbreviations
+            url: https://training.seer.cancer.gov/abstracting/additional/abbreviations/all.html
+            supports: The abbreviation table explicitly maps PA to Physician assistant.
+  AP:
+    senses:
+      - gold_sense: Anteroposterior
+        verification_status: terminology_verified
+        references:
+          - title: NCI SEER Training — Common Abbreviations
+            url: https://training.seer.cancer.gov/abstracting/additional/abbreviations/all.html
+            supports: The abbreviation table explicitly maps AP to Anteroposterior.
+      - gold_sense: Anterior pituitary
+        verification_status: terminology_verified
+        references:
+          - title: NCI SEER Training — Common Abbreviations
+            url: https://training.seer.cancer.gov/abstracting/additional/abbreviations/all.html
+            supports: The abbreviation table explicitly maps AP to Anterior pituitary.

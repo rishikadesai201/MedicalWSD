@@ -1,0 +1,114 @@
+{
+  "archive_member": "medical-wsd/data/processed/real_wsd_preprocessed.jsonl",
+  "total_records": 580,
+  "accepted_records": 470,
+  "rejected_records": 110,
+  "rejections_by_reason": {
+    "target_only_in_surrounding_context_not_sentence": 36,
+    "multiple_target_mentions_no_occurrence_index": 74
+  },
+  "accepted_target_spans_verified": 470,
+  "accepted_candidate_mappings_valid": 470,
+  "accepted_integer_label_indices_match_sense": 470,
+  "accepted_candidate_counts_match_lists": 470,
+  "accepted_labels_independently_confirmed": 0,
+  "accepted_labels_unverified": 470,
+  "accepted_weak_label_sources": {
+    "local_rule": 443,
+    "document_level_fallback": 27,
+    "other_or_missing": 0
+  },
+  "accepted_by_abbreviation": {
+    "AP": {
+      "accepted": 95,
+      "local": 95
+    },
+    "AV": {
+      "accepted": 73,
+      "local": 73
+    },
+    "CA": {
+      "accepted": 11,
+      "document_level": 7,
+      "local": 4
+    },
+    "LAD": {
+      "accepted": 135,
+      "local": 131,
+      "document_level": 4
+    },
+    "MS": {
+      "accepted": 89,
+      "local": 87,
+      "document_level": 2
+    },
+    "PA": {
+      "accepted": 18,
+      "local": 18
+    },
+    "PDA": {
+      "accepted": 27,
+      "local": 25,
+      "document_level": 2
+    },
+    "PE": {
+      "accepted": 22,
+      "local": 10,
+      "document_level": 12
+    }
+  },
+  "accepted_by_abbreviation_sense_and_label_source": {
+    "AP::Anteroposterior": {
+      "local": 95
+    },
+    "AV::Arteriovenous": {
+      "local": 32
+    },
+    "AV::Atrioventricular": {
+      "local": 41
+    },
+    "CA::Cancer": {
+      "document_level": 7,
+      "local": 4
+    },
+    "LAD::Left Anterior Descending": {
+      "local": 131,
+      "document_level": 4
+    },
+    "MS::Mental Status": {
+      "local": 87,
+      "document_level": 2
+    },
+    "PA::Pulmonary Artery": {
+      "local": 18
+    },
+    "PDA::Patent Ductus Arteriosus": {
+      "local": 2
+    },
+    "PDA::Posterior Descending Artery": {
+      "local": 23,
+      "document_level": 2
+    },
+    "PE::Physical Examination": {
+      "local": 4,
+      "document_level": 12
+    },
+    "PE::Pleural Effusion": {
+      "local": 4
+    },
+    "PE::Pulmonary Embolism": {
+      "local": 2
+    }
+  },
+  "notes": [
+    "All accepted label_verified values are false; no row is independently confirmed.",
+    "Span validation confirms only the unique literal abbreviation offsets, not semantic correctness of the gold label.",
+    "Raw source CSV is absent, so source provenance and weak-label rules cannot be independently validated."
+  ],
+  "preliminary_experiment_assessment": {
+    "valid_for_primary_wsd_performance_claims": false,
+    "valid_for_software_pipeline_smoke_tests": true,
+    "valid_for_descriptive_weak_label_analysis": true,
+    "reason": "No independently reviewed gold labels; 113 exact full-context duplicates cross splits in the unadapted file; raw source corpus is absent; some abbreviations have one observed training sense."
+  }
+}

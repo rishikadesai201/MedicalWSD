@@ -1,0 +1,39 @@
+{
+  "seed": 20261026,
+  "dataset_path": "data/synthetic/verified_examples.jsonl",
+  "dataset_quality_report": "data/synthetic/quality_report.json",
+  "train_split": "train",
+  "validation_split": "validation",
+  "test_split": "test",
+  "use_validation_for_tuning": false,
+  "feature_text": "full_sentence_with_target_literal",
+  "tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 1,
+    "sublinear_tf": true
+  },
+  "logistic_regression": {
+    "C": 1.0,
+    "max_iter": 2000,
+    "class_weight": null
+  },
+  "output_dir": "outputs/baseline",
+  "data_seed": 20261026,
+  "data_file": "data/synthetic/verified_examples.jsonl",
+  "group_counts_by_split": {
+    "train": 72,
+    "validation": 24,
+    "test": 36
+  },
+  "template_groups_by_split": {
+    "train": 36,
+    "validation": 12,
+    "test": 18
+  },
+  "python_version": "3.14.5",
+  "scikit_learn_version": "1.9.0",
+  "metrics_policy": "fixed test split; no hyperparameter or threshold tuning"
+}

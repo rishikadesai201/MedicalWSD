@@ -1,0 +1,19 @@
+{
+  "dataset_path": "data/synthetic/reviewed_v1.jsonl",
+  "training_split": "train",
+  "seed": 20261026,
+  "tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 1,
+    "sublinear_tf": true
+  },
+  "linear_svm": {
+    "C": 1.0,
+    "class_weight": null
+  },
+  "minimum_training_examples_per_sense": 2,
+  "validation_or_test_used_for_training_or_selection": false
+}

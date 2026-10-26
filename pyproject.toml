@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68,<76"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medsense-ai"
+version = "0.1.0"
+description = "Research scaffold for medical abbreviation word-sense disambiguation"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy==2.4.6",
+  "pandas==3.0.5",
+  "scikit-learn==1.9.0",
+  "PyYAML==6.0.3",
+]
+
+[project.scripts]
+medsense = "medsense.cli:main"
+
+[project.optional-dependencies]
+ui = ["streamlit==1.40.2", "matplotlib==3.9.2", "seaborn==0.13.2"]
+neural = ["torch==2.5.1", "transformers==4.46.3", "datasets==3.1.0"]
+dev = ["pytest==8.3.3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

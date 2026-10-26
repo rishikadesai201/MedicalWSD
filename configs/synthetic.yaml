@@ -1,0 +1,10 @@
+seed: 20261026
+terminology_path: data/terminology/verified_senses.yaml
+output_path: data/synthetic/verified_examples.jsonl
+quality_report_path: data/synthetic/quality_report.json
+variants_per_template: 2
+split_template_families:
+  train: 6
+  validation: 2
+  test: 3
+dataset_label: synthetic_educational_template_data

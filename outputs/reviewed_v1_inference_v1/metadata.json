@@ -1,0 +1,78 @@
+{
+  "artifact_format_version": 1,
+  "model_version": "reviewed-v1-tfidf-linear-svm-1",
+  "algorithm": "TF-IDF word unigram/bigram + per-abbreviation LinearSVC",
+  "model_file": "tfidf_linear_svm.joblib",
+  "training_data_reference": "data/synthetic/reviewed_v1.jsonl",
+  "training_split": "train",
+  "training_data_sha256": "5edb85ac8e945442800418b98789d4144643ce3b8f121432e71caa96580c860f",
+  "training_example_count": 23,
+  "training_example_ids": [
+    "syn-pa-pa_role_1-2",
+    "syn-pa-pa_role_3-1",
+    "syn-pa-pa_role_5-2",
+    "syn-pa-pa_role_7-1",
+    "syn-pa-pa_role_9-2",
+    "syn-pa-pa_vessel_10-2",
+    "syn-pa-pa_vessel_4-1",
+    "syn-pa-pa_vessel_8-1",
+    "syn-pe-pe_exam_2-2",
+    "syn-pe-pe_exam_4-2",
+    "syn-pe-pe_exam_5-2",
+    "syn-pe-pe_exam_7-2",
+    "syn-pe-pe_exam_9-1",
+    "syn-pe-pe_exam_9-2",
+    "syn-pe-pe_vte_1-1",
+    "syn-pe-pe_vte_1-2",
+    "syn-pe-pe_vte_11-1",
+    "syn-pe-pe_vte_11-2",
+    "syn-pe-pe_vte_2-1",
+    "syn-pe-pe_vte_5-2",
+    "syn-pe-pe_vte_7-2",
+    "syn-pe-pe_vte_9-1",
+    "syn-pe-pe_vte_9-2"
+  ],
+  "training_group_count": 19,
+  "class_counts_by_abbreviation_and_sense": {
+    "PA": {
+      "Physician assistant": 5,
+      "Pulmonary artery": 3
+    },
+    "PE": {
+      "Physical examination": 6,
+      "Pulmonary embolism": 9
+    }
+  },
+  "supported_abbreviations_and_senses": {
+    "PA": [
+      "Physician assistant",
+      "Pulmonary artery"
+    ],
+    "PE": [
+      "Physical examination",
+      "Pulmonary embolism"
+    ]
+  },
+  "excluded_abbreviations": {
+    "AP": "fewer than two represented training senses or fewer than 2 training examples per sense: {'Anterior pituitary': 11}"
+  },
+  "ap_policy": "AP excluded because reviewed-v1 training contains only Anterior pituitary",
+  "minimum_training_examples_per_sense": 2,
+  "tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 1,
+    "sublinear_tf": true
+  },
+  "linear_svm": {
+    "C": 1.0,
+    "class_weight": null
+  },
+  "seed": 20261026,
+  "validation_or_test_used_for_training_or_selection": false,
+  "score_kind": "uncalibrated decision margin; not a probability",
+  "python_version": "3.14.5",
+  "scikit_learn_version": "1.9.0"
+}

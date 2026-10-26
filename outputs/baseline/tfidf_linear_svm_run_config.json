@@ -1,0 +1,27 @@
+{
+  "model": "tfidf_linear_svm",
+  "seed": 20261026,
+  "data_seed": 20261026,
+  "data_file": "data/synthetic/verified_examples.jsonl",
+  "split_sizes": {
+    "train": 72,
+    "validation": 24,
+    "test": 36
+  },
+  "tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 1,
+    "sublinear_tf": true
+  },
+  "linear_svm": {
+    "C": 1.0,
+    "class_weight": null
+  },
+  "validation_policy": "fixed configuration; validation not used for model selection",
+  "test_policy": "single evaluation on the existing held-out test split",
+  "python_version": "3.14.5",
+  "scikit_learn_version": "1.9.0"
+}

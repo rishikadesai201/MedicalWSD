@@ -1,0 +1,32 @@
+{
+  "total": 132,
+  "counts": {
+    "pending": 0,
+    "accepted": 58,
+    "rejected": 74,
+    "revised": 0
+  },
+  "by_abbreviation": {
+    "AP": {
+      "pending": 0,
+      "accepted": 19,
+      "rejected": 25,
+      "revised": 0,
+      "total": 44
+    },
+    "PA": {
+      "pending": 0,
+      "accepted": 15,
+      "rejected": 29,
+      "revised": 0,
+      "total": 44
+    },
+    "PE": {
+      "pending": 0,
+      "accepted": 24,
+      "rejected": 20,
+      "revised": 0,
+      "total": 44
+    }
+  }
+}
